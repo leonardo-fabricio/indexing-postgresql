@@ -1,0 +1,9 @@
+EXPLAIN SELECT * FROM "Aplicacao_clients" as ap WHERE ap.name = 'Rafael João';
+
+SELECT * FROM "Aplicacao_clients" as ap WHERE ap.name like '%Rafael%';
+
+EXPLAIN SELECT * FROM "Aplicacao_clients" as ap WHERE ap.id = 10;
+
+create index idx_name on "Aplicacao_clients"(name);
+
+drop index idx_name;
